@@ -1,13 +1,13 @@
-/// Common page layout wrapper providing consistent UI structure and window controls.
-/// 
-/// This widget serves as a wrapper for all main application pages, providing:
-/// - Consistent layout structure with drag-to-resize functionality
-/// - Overlay window controls (minimize, maximize, close, settings)
-/// - Callback mechanism for handling settings changes
-/// 
-/// The wrapper uses a Stack layout to overlay the window controls on top of
-/// the page content, ensuring they're always accessible regardless of the
-/// underlying page content.
+// Common page layout wrapper providing consistent UI structure and window controls.
+// 
+// This widget serves as a wrapper for all main application pages, providing:
+// - Consistent layout structure with drag-to-resize functionality
+// - Overlay window controls (minimize, maximize, close, settings)
+// - Callback mechanism for handling settings changes
+// 
+// The wrapper uses a Stack layout to overlay the window controls on top of
+// the page content, ensuring they're always accessible regardless of the
+// underlying page content.
 
 import 'package:flutter/material.dart';
 import 'package:minimal_jellyfin/view/widgets/top_buttons_bar.dart';

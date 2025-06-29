@@ -1,19 +1,19 @@
-/// Settings configuration screen for the Minimal Jellyfin application.
-/// 
-/// This file contains the settings page where users can configure their
-/// Jellyfin server connection details. The page provides:
-/// 
-/// - Server URL input with real-time validation
-/// - User-friendly error messages for invalid URLs
-/// - Secure URL validation (HTTP/HTTPS only)
-/// - Persistent storage of configuration
-/// - Automatic navigation after successful configuration
-/// - Loading states and user feedback
-/// 
-/// The settings page is typically the first screen users see when launching
-/// the application for the first time, or when they need to change their
-/// server configuration. It ensures users can only proceed with valid
-/// server URLs and provides clear feedback throughout the process.
+// Settings configuration screen for the Minimal Fin application.
+//
+// This file contains the settings page where users can configure their
+// Jellyfin server connection details. The page provides:
+//
+// - Server URL input with real-time validation
+// - User-friendly error messages for invalid URLs
+// - Secure URL validation (HTTP/HTTPS only)
+// - Persistent storage of configuration
+// - Automatic navigation after successful configuration
+// - Loading states and user feedback
+//
+// The settings page is typically the first screen users see when launching
+// the application for the first time, or when they need to change their
+// server configuration. It ensures users can only proceed with valid
+// server URLs and provides clear feedback throughout the process.
 
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
@@ -24,11 +24,11 @@ import '../../model/settings_storage.dart';
 import '../routing/app_routes.dart';
 
 /// Settings page widget for configuring Jellyfin server connection.
-/// 
+///
 /// This widget provides a user interface for entering and validating
 /// the Jellyfin server URL. It includes comprehensive validation,
 /// error handling, and automatic navigation upon successful configuration.
-/// 
+///
 /// The page is designed to be user-friendly with clear instructions,
 /// validation feedback, and loading states to guide users through
 /// the server setup process.
@@ -41,26 +41,26 @@ class SettingsPage extends StatefulWidget {
 }
 
 /// State class for SettingsPage managing form input and validation.
-/// 
+///
 /// This state class handles all aspects of the settings form including:
 /// - Text input management for the server URL
 /// - URL validation with comprehensive error checking
 /// - Loading states during save operations
 /// - Navigation after successful configuration
 /// - User feedback through snackbars and visual indicators
-/// 
+///
 /// The class ensures a smooth user experience with proper validation,
 /// error handling, and clear feedback throughout the configuration process.
 class _SettingsPageState extends State<SettingsPage> {
   /// Text controller for the server URL input field.
-  /// 
+  ///
   /// Manages the text input state and provides access to the current
   /// URL value entered by the user. Initialized with any existing
   /// saved URL during widget initialization.
   final TextEditingController _urlController = TextEditingController();
 
   /// Tracks whether a save operation is currently in progress.
-  /// 
+  ///
   /// Used to show loading indicators and prevent multiple simultaneous
   /// save operations. Set to true during async save operations.
   bool _isLoading = false;
@@ -73,7 +73,7 @@ class _SettingsPageState extends State<SettingsPage> {
   }
 
   /// Loads the currently saved server URL into the input field.
-  /// 
+  ///
   /// This method retrieves any previously saved server URL from storage
   /// and populates the text field with it. If no URL is saved, the field
   /// remains empty, allowing the user to enter a new URL.
@@ -86,15 +86,15 @@ class _SettingsPageState extends State<SettingsPage> {
   }
 
   /// Validates whether the provided URL is acceptable for Jellyfin connection.
-  /// 
+  ///
   /// This method performs comprehensive URL validation including:
   /// - Checking for empty/whitespace-only input
   /// - Validating URL format using the validators package
   /// - Requiring HTTP or HTTPS protocol for security
-  /// 
+  ///
   /// Parameters:
   ///   [url] - The URL string to validate
-  /// 
+  ///
   /// Returns:
   ///   true if the URL is valid and safe to use, false otherwise
   bool _isValidUrl(String url) {
@@ -108,14 +108,14 @@ class _SettingsPageState extends State<SettingsPage> {
   }
 
   /// Generates appropriate error messages for invalid URLs.
-  /// 
+  ///
   /// This method provides user-friendly error messages based on the
   /// specific validation failure, helping users understand what needs
   /// to be corrected in their input.
-  /// 
+  ///
   /// Parameters:
   ///   [url] - The URL that failed validation
-  /// 
+  ///
   /// Returns:
   ///   A descriptive error message explaining the validation failure
   String _getValidationErrorMessage(String url) {
@@ -132,7 +132,7 @@ class _SettingsPageState extends State<SettingsPage> {
   }
 
   /// Saves the entered server URL after validation and handles navigation.
-  /// 
+  ///
   /// This method performs the complete save operation including:
   /// 1. URL validation with user feedback for errors
   /// 2. Loading state management during async operations
@@ -140,7 +140,7 @@ class _SettingsPageState extends State<SettingsPage> {
   /// 4. Success feedback to the user
   /// 5. Automatic navigation to the web view
   /// 6. Comprehensive error handling with user feedback
-  /// 
+  ///
   /// The method ensures the user experience is smooth with proper loading
   /// indicators, clear feedback, and appropriate navigation behavior based
   /// on the current navigation state.

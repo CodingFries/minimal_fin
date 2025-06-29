@@ -1,11 +1,11 @@
-/// Settings storage management using Hive database for persistent data.
-/// 
-/// This file provides a simple interface for storing and retrieving application
-/// settings using the Hive NoSQL database. Currently manages the Jellyfin server
-/// URL configuration, with the ability to easily extend for additional settings.
-/// 
-/// The storage is initialized during application startup and persists data
-/// between application sessions.
+// Settings storage management using Hive database for persistent data.
+// 
+// This file provides a simple interface for storing and retrieving application
+// settings using the Hive NoSQL database. Currently manages the Jellyfin server
+// URL configuration, with the ability to easily extend for additional settings.
+// 
+// The storage is initialized during application startup and persists data
+// between application sessions.
 
 import 'package:hive_ce/hive.dart';
 

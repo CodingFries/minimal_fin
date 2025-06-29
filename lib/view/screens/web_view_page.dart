@@ -1,20 +1,20 @@
-/// Main web view screen that displays the Jellyfin web interface with custom enhancements.
-/// 
-/// This file contains the primary screen for displaying Jellyfin's web interface
-/// within a WebView component. It includes sophisticated JavaScript injection
-/// capabilities to customize the web interface behavior, particularly for
-/// fullscreen functionality and desktop integration.
-/// 
-/// Key features:
-/// - WebView2 integration for optimal web content rendering
-/// - JavaScript injection for customizing Jellyfin's web interface
-/// - Custom fullscreen handling that integrates with window management
-/// - Dynamic button behavior modification using MutationObserver
-/// - Progress indication during page loading
-/// - URL validation and navigation handling
-/// 
-/// The implementation uses advanced web technologies to provide a seamless
-/// desktop experience while maintaining compatibility with Jellyfin's web interface.
+// Main web view screen that displays the Jellyfin web interface with custom enhancements.
+// 
+// This file contains the primary screen for displaying Jellyfin's web interface
+// within a WebView component. It includes sophisticated JavaScript injection
+// capabilities to customize the web interface behavior, particularly for
+// fullscreen functionality and desktop integration.
+// 
+// Key features:
+// - WebView2 integration for optimal web content rendering
+// - JavaScript injection for customizing Jellyfin's web interface
+// - Custom fullscreen handling that integrates with window management
+// - Dynamic button behavior modification using MutationObserver
+// - Progress indication during page loading
+// - URL validation and navigation handling
+// 
+// The implementation uses advanced web technologies to provide a seamless
+// desktop experience while maintaining compatibility with Jellyfin's web interface.
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';

@@ -1,13 +1,13 @@
-/// Main entry point for the Minimal Jellyfin desktop application.
-/// 
-/// This file handles the application initialization including:
-/// - Hive database setup for settings storage
-/// - WebView2 environment configuration for Windows
-/// - Window manager setup for frameless window functionality
-/// - Application theme and routing configuration
-/// 
-/// The application creates a minimal, frameless desktop client for Jellyfin
-/// media servers with enhanced desktop integration.
+// Main entry point for the Minimal Fin desktop application.
+//
+// This file handles the application initialization including:
+// - Hive database setup for settings storage
+// - WebView2 environment configuration for Windows
+// - Window manager setup for frameless window functionality
+// - Application theme and routing configuration
+//
+// The application creates a minimal, frameless desktop client for Jellyfin
+// media servers with enhanced desktop integration.
 
 import 'dart:async';
 import 'dart:io';
@@ -23,14 +23,14 @@ import 'model/settings_storage.dart';
 import 'view/routing/app_routes.dart';
 
 /// Application entry point that initializes all required services and configurations.
-/// 
+///
 /// This function performs the following initialization steps:
 /// 1. Sets up Flutter widget binding
 /// 2. Initializes Hive database for settings storage
 /// 3. Configures WebView2 environment for web content rendering
 /// 4. Sets up window manager for frameless window functionality
 /// 5. Launches the main application widget
-/// 
+///
 /// Throws an assertion error if WebView2 Runtime is not available.
 Future main() async {
   // Ensure Flutter framework is properly initialized
@@ -83,7 +83,7 @@ Future main() async {
 }
 
 /// Root application widget that configures the app's theme, routing, and title.
-/// 
+///
 /// This widget serves as the main entry point for the Flutter application and
 /// sets up the Material Design theme with dark mode and Material 3 design system.
 /// It uses Go Router for declarative navigation between screens.
@@ -91,7 +91,7 @@ class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   /// Builds the root widget tree for the application.
-  /// 
+  ///
   /// Returns a [MaterialApp.router] configured with:
   /// - Dark theme using Material 3 design system
   /// - Go Router configuration for navigation
