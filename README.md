@@ -10,6 +10,17 @@ frameless window that displays your Jellyfin server's web interface with enhance
 - **WebView2 Integration**: Uses Microsoft WebView2 for optimal web content rendering on Windows
 - **Persistent Settings**: Remembers your server configuration between sessions
 
+## Perfect for OLED Users
+
+This application is specifically designed with OLED display users in mind:
+
+- **Seamless Ultrawide Experience**: The frameless design eliminates window borders, creating a clean viewing experience
+  perfect for ultrawide OLED monitors
+- **Side-by-Side Productivity**: Work alongside your media consumption without caring about burn-in concerns, as the
+  minimal interface does not leave persistent window borders
+- **Immersive Media Viewing**: The minimal interface disappears into the background, letting your OLED display showcase
+  content without interference
+
 ## Requirements
 
 - Windows 10/11 (WebView2 Runtime required)
